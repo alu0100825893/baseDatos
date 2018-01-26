@@ -2,14 +2,53 @@
 <html>
 <head>
 	<title>Películas pendientes</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
 <body>
-	<form action="autentifica.php" method="post">
-		<p>Usuario <input name="Usuario"></p>
-		<p>Clave <input type="password" name="Clave"></p>
-		<p><input type="submit" name="Accion" value="ENTRAR"></p>
-		<p><input type="submit" name="Accion" value="REGISTRARSE" ></p>
-	</form>
+	<div class="container main">
+		<div class="row">
+			<div class="col-sm-3"> </div>
 
+			<div class="col-sm-6">
+				<form class="form-horizontal" action="autentifica.php" method="post">
+					<div class="form-group">
+						<label class="control-label col-sm-3" for="user">Usuario:</label>
+						<div class="col-sm-9 input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+							<input class="form-control" id="user" placeholder="Introduzca su email" name="Usuario">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-sm-3" for="pw">Clave:</label>
+						<div class="col-sm-9 input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+							<input type="password" class="form-control" id="pw" placeholder="Introduzca su contraseña" name="Clave">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-5"></div>
+						<div class="col-sm-2">
+							<div class="btn-group-vertical form-group">
+						    <button type="submit" class="btn btn-lg btn-primary" name="Accion" value="ENTRAR">Iniciar sesión</button>
+						    <button type="submit" class="btn btn-lg btn-primary" name="Accion" value="REGISTRARSE" >Registrarse</button>
+							</div>
+						</div>
+					 <div class="col-sm-5"></div>
+				</div>
+
+				</form>
+			</div>
+
+			<div class="col-sm-3"> </div>
+		</div>
+	</div	>
 </body>
 </html>

@@ -1,0 +1,23 @@
+
+body {
+  color: white;
+  background-color: black;
+  font-size: 20px;
+}
+
+tr:hover {
+  color: black;
+}
+
+thead tr:hover {
+  color: white;
+}
+
+
+input {
+  color: black;
+}
+
+.main {
+  margin-top: 100px;
+}
