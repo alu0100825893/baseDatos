@@ -38,20 +38,30 @@
         						<label class="control-label col-sm-3" for="pw">Cambiar clave:</label>
         						<div class="col-sm-9 input-group">
         							<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>';
-echo "  							<input type=\"password\" class=\"form-control\" id=\"pw\" placeholder=\"Introduzca una nueva contraseña\" name=\"Clave\" value=$clave>
+echo "  							<input type=\"password\" class=\"form-control\" id=\"pw\" placeholder=\"Introduzca una nueva contraseña\" name=\"Clave\" value=''>
         						</div>
         					</div>";
 
-echo '        	<div class="row">
+echo '        		<div class="row">
         						<div class="col-sm-5"></div>
         						<div class="col-sm-2">
         							<div class="btn-group-vertical form-group">
         						    <button type="submit" class="btn btn-lg btn-primary" name="Accion" value="EDITAR">Editar</button>
-        							</div>
+                        <a href=lista.php>
+                                <button type="button" class="btn btn-lg btn-primary">Cancelar</button>
+                        </a>
+                      </div>
         						</div>
-        					 <div class="col-sm-5"></div>
+
         				</div>
-        				</form>';
+                </form>
+
+                ';
+
+
+
+
+
 
   echo '	     </div>
               <div class="col-sm-2"> </div>
